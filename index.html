@@ -13,7 +13,13 @@
           <h1>MY TODO's</h1>
         </div>
         <div class="tabs">
-          <button onclick="openTab(event,'myday')" class="tablinks" id="myday-button">
+            <button onclick="openTab(event,'tasks')" class="tablinks" id="task-button">
+                <div class="button-content">
+                  <img src="./assets/task.png" alt="myday" />
+                  <a href="#">Tasks</a>
+                </div>
+              </button>
+          <button onclick="openTab(event,'myday')" class="tablinks">
             <div class="button-content">
               <img src="./assets/my-day-02.jpg" alt="myday" />
               <a href="#">My Day</a>
@@ -24,13 +30,7 @@
               <img src="./assets/important.png" alt="myday" />
               <a href="#">Important</a>
             </div>
-          </button>
-          <button onclick="openTab(event,'tasks')" class="tablinks">
-            <div class="button-content">
-              <img src="./assets/task.png" alt="myday" />
-              <a href="#">Tasks</a>
-            </div>
-          </button>
+        </button>
         </div>
       </div>
       <div class="tabcontents" id="myday">
@@ -68,9 +68,10 @@
             <p id="current-date"></p>
           </div>
         </div>
-        <div class="todos-display">
-          <ul id="todos-tasks"></ul>
-        </div>
+        <div class="add-todo">
+            <textarea id="todoDescription" rows="3" placeholder="Enter a new todo description"></textarea>
+            <button id="addButton" class="add-button" onclick="addTodo()">Add</button>
+          </div>
       </div>
     </div>
     <script type="text/javascript" src="./todo.js"></script>

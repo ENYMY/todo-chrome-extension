@@ -128,3 +128,29 @@
   justify-content: space-between;
   align-items: center;
 }
+
+
+/* Task CSS */
+.add-todo {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 80%;
+  padding: 5px;
+  resize: vertical;
+  border: 1px solid #028eebde;
+}
+
+.add-button {
+  margin: 10px;
+  margin-left: 0px;
+  width: 180px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
