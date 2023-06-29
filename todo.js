@@ -103,6 +103,19 @@ function addTodo() {
   }
 }
 
+document.getElementById("ddButton").addEventListener('click', function() {
+    var description = document.getElementById("todoDescription").value;
+    if (description !== null && description.trim() !== "") {
+      var newTodo = {
+        id: Math.random().toString(),
+        description: description,
+      };
+      todos.push(newTodo);
+      renderTodoList();
+      document.getElementById("todoDescription").value = "";
+    }
+  })
+
 var currentDate = new Date();
 var dateString = currentDate.toDateString();
 document.getElementById("current-date").innerHTML = dateString;

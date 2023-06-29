@@ -1,0 +1,16 @@
+{
+    "name": "ToDo-01",
+    "version": "1.0.1",
+    "description": "MManage your Workflows with ToDo",
+    "manifest_version": 3,
+    "author": "Shaja Nasir",
+    "action": {
+        "default_popup" :"index.html",
+        "default_title":"ToDo's"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+    "service_worker": "todo.js",
+    "content_security_policy": "script-src 'self' 'nonce-shaja'"
+  }
+}
