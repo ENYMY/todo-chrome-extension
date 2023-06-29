@@ -1,5 +1,5 @@
 body {
-  width: 1200px;
+  width: 900px;
 }
 .main-container {
   display: grid;
@@ -24,7 +24,7 @@ body {
 
 .tabs button {
   margin-bottom: 10px;
-  width: 100%;
+  width: 95%;
   height: 70px;
   padding-left: 20px;
   border: none;
@@ -98,7 +98,7 @@ body {
 }
 
 .box {
-  width: 85%;
+  width: 60%;
   height: 100px;
   border: 1px solid #028eebde;
   border-radius: 25px;

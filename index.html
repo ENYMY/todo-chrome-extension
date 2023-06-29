@@ -13,18 +13,13 @@
           <h1>MY TODO's</h1>
         </div>
         <div class="tabs">
-          <button
-            onclick="openTab(event,'tasks')"
-            class="tablinks"
-            id="task-button"
-            nonce="shaja"
-          >
+          <button id="task-button" class="tablinks" nonce="shaja">
             <div class="button-content">
               <img src="./assets/task.png" alt="myday" />
               <a href="#">Add Todos</a>
             </div>
           </button>
-          <button onclick="openTab(event,'myday')" class="tablinks" nonce="shaja">
+          <button id="myday-button" class="tablinks" nonce="shaja">
             <div class="button-content">
               <img src="./assets/my-day-02.jpg" alt="myday" />
               <a href="#">My ToDo's</a>
@@ -54,9 +49,10 @@
             <textarea
               id="todoDescription"
               rows="3"
-              placeholder="Enter a new todo description" nonce="shaja"
+              placeholder="Enter a new todo description"
+              nonce="shaja"
             ></textarea>
-            <button id="addButton" class="add-button" onclick="addTodo()" nonce="shaja">
+            <button id="addButton" class="add-button" nonce="shaja">
               Add
             </button>
           </div>
