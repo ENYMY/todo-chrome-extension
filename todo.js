@@ -16,6 +16,25 @@ const todos = [
   },
 ];
 
+document.getElementById("myday-button").click();
+function openTab(event,tabName) {
+    var i, tabcontents, tablinks;
+    tabcontents = document.getElementsByClassName("tabcontents");
+    tablinks = document.getElementsByClassName("tablinks")
+
+    // get all tabcontents and hide them
+    for(i=0; i< tabcontents.length;i++) {
+        tabcontents[i].style.display="none";
+    }
+
+    // remove active in tablinks
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.className += " active";
+}
+
 const todos_li = document.getElementById("todos");
 
 todos_li.innerHTML = todos
@@ -36,6 +55,9 @@ todos_li.innerHTML = todos
   )
   .join("");
 
+
+
 var currentDate = new Date();
 var dateString = currentDate.toDateString();
 document.getElementById("current-date").innerHTML = dateString;
+

@@ -13,23 +13,27 @@
           <h1>MY TODO's</h1>
         </div>
         <div class="tabs">
-          <ul>
-            <li>
+          <button onclick="openTab(event,'myday')" class="tablinks" id="myday-button">
+            <div class="button-content">
               <img src="./assets/my-day-02.jpg" alt="myday" />
               <a href="#">My Day</a>
-            </li>
-            <li>
+            </div>
+          </button>
+          <button onclick="openTab(event,'important')" class="tablinks">
+            <div class="button-content">
               <img src="./assets/important.png" alt="myday" />
               <a href="#">Important</a>
-            </li>
-            <li>
+            </div>
+          </button>
+          <button onclick="openTab(event,'tasks')" class="tablinks">
+            <div class="button-content">
               <img src="./assets/task.png" alt="myday" />
               <a href="#">Tasks</a>
-            </li>
-          </ul>
+            </div>
+          </button>
         </div>
       </div>
-      <div class="inner-container-75">
+      <div class="tabcontents" id="myday">
         <div class="header">
           <div class="heading">
             <h1>My Day</h1>
@@ -40,6 +44,32 @@
         </div>
         <div class="todos-display">
           <ul id="todos"></ul>
+        </div>
+      </div>
+      <div class="tabcontents" id="important">
+        <div class="header">
+          <div class="heading">
+            <h1>Importants</h1>
+          </div>
+          <div class="today">
+            <p id="current-date"></p>
+          </div>
+        </div>
+        <div class="todos-display">
+          <ul id="todos-important"></ul>
+        </div>
+      </div>
+      <div class="tabcontents" id="tasks">
+        <div class="header">
+          <div class="heading">
+            <h1>Tasks</h1>
+          </div>
+          <div class="today">
+            <p id="current-date"></p>
+          </div>
+        </div>
+        <div class="todos-display">
+          <ul id="todos-tasks"></ul>
         </div>
       </div>
     </div>
