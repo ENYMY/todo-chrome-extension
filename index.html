@@ -13,24 +13,22 @@
           <h1>MY TODO's</h1>
         </div>
         <div class="tabs">
-            <button onclick="openTab(event,'tasks')" class="tablinks" id="task-button">
-                <div class="button-content">
-                  <img src="./assets/task.png" alt="myday" />
-                  <a href="#">Tasks</a>
-                </div>
-              </button>
+          <button
+            onclick="openTab(event,'tasks')"
+            class="tablinks"
+            id="task-button"
+          >
+            <div class="button-content">
+              <img src="./assets/task.png" alt="myday" />
+              <a href="#">Add Todos</a>
+            </div>
+          </button>
           <button onclick="openTab(event,'myday')" class="tablinks">
             <div class="button-content">
               <img src="./assets/my-day-02.jpg" alt="myday" />
-              <a href="#">My Day</a>
+              <a href="#">My ToDo's</a>
             </div>
           </button>
-          <button onclick="openTab(event,'important')" class="tablinks">
-            <div class="button-content">
-              <img src="./assets/important.png" alt="myday" />
-              <a href="#">Important</a>
-            </div>
-        </button>
         </div>
       </div>
       <div class="tabcontents" id="myday">
@@ -46,32 +44,25 @@
           <ul id="todos"></ul>
         </div>
       </div>
-      <div class="tabcontents" id="important">
-        <div class="header">
-          <div class="heading">
-            <h1>Importants</h1>
-          </div>
-          <div class="today">
-            <p id="current-date"></p>
-          </div>
-        </div>
-        <div class="todos-display">
-          <ul id="todos-important"></ul>
-        </div>
-      </div>
       <div class="tabcontents" id="tasks">
         <div class="header">
           <div class="heading">
             <h1>Tasks</h1>
           </div>
-          <div class="today">
-            <p id="current-date"></p>
+          <div class="add-todo">
+            <textarea
+              id="todoDescription"
+              rows="3"
+              placeholder="Enter a new todo description"
+            ></textarea>
+            <button id="addButton" class="add-button" onclick="addTodo()">
+              Add
+            </button>
           </div>
         </div>
-        <div class="add-todo">
-            <textarea id="todoDescription" rows="3" placeholder="Enter a new todo description"></textarea>
-            <button id="addButton" class="add-button" onclick="addTodo()">Add</button>
-          </div>
+        <div class="todos-display">
+          <ul id="todos"></ul>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="./todo.js"></script>

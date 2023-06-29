@@ -85,6 +85,9 @@
 .todos-display {
   /* background-color: ; */
   z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 85%;
 }
 
 .todos-display li {

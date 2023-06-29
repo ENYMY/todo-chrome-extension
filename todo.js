@@ -1,21 +1,7 @@
 const todos = [
   {
     id: Math.random().toString(),
-    isStared: false,
-    isDone: false,
-    description: "Meeting 1",
-  },
-  {
-    id: Math.random().toString(),
-    isStared: false,
-    isDone: false,
-    description: "Meeting 2",
-  },
-  {
-    id: Math.random().toString(),
-    isStared: false,
-    isDone: false,
-    description: "Meeting 3",
+    description: "Example",
   },
 ];
 
@@ -46,7 +32,6 @@ function generateTodoHTML(todo) {
       <li>
         <div class="box">
           <div class="displays">
-            <div><input type="checkbox" class="checkbox"></div>
             <div><p class="description">${todo.description}</p></div>
           </div>
           <div class="buttons">
